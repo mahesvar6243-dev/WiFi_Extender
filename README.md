@@ -10,5 +10,20 @@ An ESP32-based wireless networking prototype that connects
 to an existing Wi-Fi network and provides an additional
 Wi-Fi access point for nearby devices.
 
-caution:
-make sure you connect the 10uf capacitors for the the NRF24L01 VCC and GND as shown in the picture.
+Project Overview :
+
+This project implements a dual-radio wireless packet repeater using an ESP32-WROOM-32 and two nRF24L01+ PA/LNA modules.
+
+The ESP32 uses two independent SPI interfaces:
+
+- VSPI for nRF24 #1
+- HSPI for nRF24 #2
+
+The first nRF24 receives wireless packets, the ESP32 processes the received data, and the second nRF24 retransmits the packet to another node.
+
+The system is designed to demonstrate packet forwarding, dual-SPI communication, and wireless communication using the nRF24L01+.
+
+ Features:
+  - Dual nRF24L01+ wireless interfaces
+  - Separate VSPI and HSPI buses
+  - Packet reception and retransmission
