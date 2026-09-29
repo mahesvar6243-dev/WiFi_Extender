@@ -9,3 +9,6 @@ ESP32-WROOM-32 | Embedded C/C++ | Wi-Fi | TCP/IP | IoT
 An ESP32-based wireless networking prototype that connects
 to an existing Wi-Fi network and provides an additional
 Wi-Fi access point for nearby devices.
+
+caution:
+make sure you connect the 10uf capacitors for the the NRF24L01 VCC and GND as shown in the picture.
