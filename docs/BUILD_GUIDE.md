@@ -31,4 +31,4 @@ connections for the VSPI :
 | MISO     | GPIO 12
 
 
-
+* make sure the 10uf capacitor is connected to the NRF24L01 modules VCC and GND to the +ve and -ve of the capacitor
